@@ -71,7 +71,7 @@ const getType = (element: any) => {
       return functionName !== '' ? 'Memo(' + functionName + ')' : 'Memo';
     }
   }
-  return 'UNDEFINED';
+  return type?.displayName ?? 'UNDEFINED';
 };
 
 const getPropKeys = (element: any) => {
